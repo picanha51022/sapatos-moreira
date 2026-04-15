@@ -1,0 +1,41 @@
+body {
+    background-image: url(sunbaby.png);
+    background-size: cover;
+}
+
+h1 {
+    color: yellowgreen;
+    text-align: center;
+}
+
+.botao-catalogo {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.destaque h2 {
+    color: #007BFF;
+    /* Azul */
+    -webkit-text-stroke: 1px black;
+    /* Borda preta */
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.destaque p {
+    color: #007BFF;
+    /* Azul */
+    -webkit-text-stroke: 1px black;
+    /* Borda preta */
+    font-size: 24px;
+    text-align: center;
+}
