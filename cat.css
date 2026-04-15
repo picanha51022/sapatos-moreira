@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f9f9f9;
+    color: #1a1a1a;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.links-navegacao a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.links-navegacao a:hover {
+    color: #000;
+}
+
+/* Container do Catálogo */
+.catalog-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titulo-sessao {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Grid de Produtos */
+.grade-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* Card de Produto */
+.tenis1, .tenis2, .tenis3 {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.tenis1:hover, .tenis2:hover, .tenis3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* Imagens */
+.foto-tenis-1 img, .foto-tenis-2 img, .foto-tenis-3 img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Info do Card */
+.card-info {
+    padding: 25px;
+}
+
+.category {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #999;
+    letter-spacing: 1px;
+}
+
+.product-name {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    font-weight: 700;
+}
+
+.price {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+.btn-add {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #333;
+}
