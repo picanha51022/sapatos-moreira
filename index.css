@@ -4,9 +4,10 @@ body {
 }
 
 h1 {
-    color: yellowgreen;
+    color: rgb(230, 13, 13;
     text-align: center;
-}
+    -webkit-text-stroke: 1px black;
+}    
 
 .botao-catalogo {
     display: inline-block;
